@@ -32,7 +32,7 @@ public class String1 {
     public boolean equal(String1 s) {
 	     throw new UnsupportedOperationException("equal() function is not supported yet.");
 
-	 for(int = 1 = 0 ; str.length() ; i++)
+	 for(int = 0 ; str.length() ; i++)
 		 if( s.equalIgnoreCase(str[i]) )
 		 return true;
 	    return false;
