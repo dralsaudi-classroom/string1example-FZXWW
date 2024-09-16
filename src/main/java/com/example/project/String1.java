@@ -32,29 +32,39 @@ public class String1 {
     public boolean equal(String1 s) {
 	    
 
-	 for(int = 0 ; str.length() ; i++)
-		 if( s.equalIgnoreCase(str[i]) )
-		 return true;
-	    return false;
+	 for(int i = 0 ; i < size ; i++){
+	    if( s.equalIgnoreCase(str[i]) ){
+		 return true; 
+		}
+          }
+	return false;
+	    
+	   
 	    
     }
+
+	
     public void reverse() {
+
+	 char temp;
+        for(int i=0 ; i < size/2 ; i++ ){
+            temp = str[i];
+            str[i] = str[size - 1 - i];
+            str[size - 1 - i] = temp;
+
+        }
+
+        // Print the reversed array
+        for (int i = 0; i < size; i++) {
+            System.out.print(str[i] + "\t");
+        }
+
+	    
+    }
 	            
 
 
-	    int temp[80] ;
-	    
-        for(int i = 0 ; i < str.length() /2 ; i++){
 
-		temp[i] = str[i];
-		str[i] = str[size--];
-    }
-	    for(int i = size ; i > str.length() /2 ; i--){
-		    str[size] = temp[temp.length()-1];
-	    
-}
-
-}
 }
 
  
