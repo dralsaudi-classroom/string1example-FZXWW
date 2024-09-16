@@ -30,7 +30,7 @@ public class String1 {
             append(s.getChar(i));
     }
     public boolean equal(String1 s) {
-	     throw new UnsupportedOperationException("equal() function is not supported yet.");
+	    
 
 	 for(int = 0 ; str.length() ; i++)
 		 if( s.equalIgnoreCase(str[i]) )
@@ -39,7 +39,7 @@ public class String1 {
 	    
     }
     public void reverse() {
-	            throw new UnsupportedOperationException("reverse() function is not supported yet.");
+	            
 
 
 	    int temp[80] ;
