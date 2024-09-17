@@ -1,14 +1,14 @@
 package com.example.project;
 
 public class String1 {
-	private char[] str;
-	private int size;
+    private char[] str;
+    private int size;
 
-	public String1 () {
+    public String1 () {
 	   size = -1;
 	   str = new char[80];
 	}
-	public void append(char c) {
+    public void append(char c) {
         str[++size] = c;
     }
     public char remove() {
@@ -29,10 +29,37 @@ public class String1 {
         for(int i = 0; i < s.length(); i++)
             append(s.getChar(i));
     }
+
+	
     public boolean equal(String1 s) {
-        throw new UnsupportedOperationException("equal() function is not supported yet.");
+	    
+
+	 for(int i = 0 ; i < size ; i++){
+	    if( s.equal(str[i]) ){
+		 return true; 
+		}
+          }
+	return false;
+	    
+	   
+	    
     }
+
+	
     public void reverse() {
-        throw new UnsupportedOperationException("reverse() function is not supported yet.");
+
+	 char temp;
+        for(int i=0 ; i < size/2 ; i++ ){
+            temp = str[i];
+            str[i] = str[size - 1 - i];
+            str[size - 1 - i] = temp;
+
+        }    
     }
+	            
+
+
+
 }
+
+ 
