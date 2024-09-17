@@ -1,14 +1,14 @@
 package com.example.project;
 
 public class String1 {
-	private char[] str;
-	private int size;
+    private char[] str;
+    private int size;
 
-	public String1 () {
+    public String1 () {
 	   size = -1;
 	   str = new char[80];
 	}
-	public void append(char c) {
+    public void append(char c) {
         str[++size] = c;
     }
     public char remove() {
@@ -29,11 +29,13 @@ public class String1 {
         for(int i = 0; i < s.length(); i++)
             append(s.getChar(i));
     }
+
+	
     public boolean equal(String1 s) {
 	    
 
 	 for(int i = 0 ; i < size ; i++){
-	    if( s.equalIgnoreCase(str[i]) ){
+	    if( s.equal(str[i]) ){
 		 return true; 
 		}
           }
@@ -52,14 +54,7 @@ public class String1 {
             str[i] = str[size - 1 - i];
             str[size - 1 - i] = temp;
 
-        }
-
-        // Print the reversed array
-        for (int i = 0; i < size; i++) {
-            System.out.print(str[i] + "\t");
-        }
-
-	    
+        }    
     }
 	            
 
